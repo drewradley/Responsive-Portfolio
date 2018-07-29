@@ -54,6 +54,7 @@ h3 {
 
 #masthead {
   position: fixed;
+  top:0;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -214,4 +215,118 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+@media screen and (max-width:980px)
+{
+  /* DO STUFF */
+  .main-section {
+    float: left;
+    width: 768px;
+    max-width: 768px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  nav a:last-child {
+    margin-right: 100px;
+  }
+
+}
+@media screen and (max-width:768px)
+{
+  /* DO STUFF */
+  .main-section {
+    float: left;
+    width: 640px;
+    max-width: 768px;
+    padding: 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  nav a:last-child {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width:640px)
+{
+  .container {
+    width: 100%;
+    max-width: 640px;
+    /* margin: 0 auto; */
+    /* clear: both; */
+  }
+  /* DO STUFF */
+  #masthead {
+    position: none;
+    top:0;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+    width: 100%;
+    /* margin: 0 0 30px; */
+    overflow: hidden;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+  #logo {
+    /* float: left; */
+    width: 640px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+
+  nav {
+    float: none;
+    /* margin-top: 25px; */
+  }
+  nav a {
+    display: inline-block;
+    text-align: center;
+    /* padding: 15px; */
+    /* margin: 15px; */
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  nav a:last-child {
+    margin-right: 50px;
+  }
+  .auth-image {
+    float: none;
+    width: 540px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  #main-container {
+    padding-top: 180px;
+    /* min-height: calc(100vh - 70px); */
+  }
+  .main-section {
+    float: left;
+    width: 600px;
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .work {
+    position: relative;
+    float: none;
+    width: 540px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
 }
